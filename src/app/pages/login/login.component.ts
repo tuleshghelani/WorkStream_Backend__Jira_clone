@@ -19,6 +19,19 @@ export class LoginComponent implements OnInit {
     constructor(private snackBar: MatSnackBar, private router: Router, private loginService: LoginService) { }
 
     ngOnInit(): void {
+      this.loginService.getTest().subscribe(
+        (data)=>{
+          //success
+          console.log('data : ', data);
+          
+          // console.log(this.catUpdateData);
+        },
+        (error)=>{
+          //error
+          console.log( 'error : ', error);
+          
+        }
+      );;
 
     }
 

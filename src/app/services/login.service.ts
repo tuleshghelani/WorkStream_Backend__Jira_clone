@@ -11,8 +11,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
 
-  public getTest(loginData: any) {
-
-    return this.http.post(`${baseUrl}/generate-token`, loginData);
+  public getTest() {
+    return this.http.get(`${baseUrl}`);
   }
 }
