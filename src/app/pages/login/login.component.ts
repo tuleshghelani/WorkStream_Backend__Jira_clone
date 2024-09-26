@@ -37,5 +37,6 @@ export class LoginComponent implements OnInit {
 
     // Login form Submit method
     loginFormSubmit(){
+      
     }
 }
